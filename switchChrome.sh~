@@ -1,0 +1,2 @@
+#!/bin/bash
+./bringToFront google-chrome "Google Chrome"
