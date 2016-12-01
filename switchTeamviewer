@@ -1,0 +1,3 @@
+#!/bin/bash
+DIR=$HOTKEY_DIR
+$DIR/bringToFront not_a_program "juesato - TeamViewer"

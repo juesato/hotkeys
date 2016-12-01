@@ -1,3 +1,12 @@
 #!/bin/bash
-DIR="/home/juesato/code/hotkeys"
-$DIR/bringToFront spotify "Spotify"
+# Spotify changed their window naming so this doesn't work anymore :(
+# DIR=$HOTKEY_DIR
+# $DIR/bringToFront spotify "Spotify"
+
+# black magic below
+
+SPOTIFY_PID=`ps -ef | egrep '\/usr\/share\/spotify\/spotify --type=zygote' | awk '{print $3}'`
+#echo $SPOTIFY_PID
+SPOTIFY_WMCTRL_ID=`wmctrl -lp | awk -vpid=$SPOTIFY_PID '$3==pid {print $1; exit}'`
+#echo $SPOTIFY_WMCTRL_ID
+wmctrl -ia $SPOTIFY_WMCTRL_ID 

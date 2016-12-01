@@ -1,3 +1,3 @@
 #!/bin/bash
-DIR="/home/juesato/code/hotkeys"
+DIR=$HOTKEY_DIR
 $DIR/bringToFront "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=koegeopamaoljbmhnfjbclbocehhgmkm" "WorkFlowy"

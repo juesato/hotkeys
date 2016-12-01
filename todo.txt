@@ -1,0 +1,5 @@
+sudo apt-get install wmctrl
+
+add do ~/.bashrc
+export HOTKEY_DIR="name of directory"
+source ~/.bashrc
