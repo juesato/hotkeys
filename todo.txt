@@ -3,3 +3,6 @@ sudo apt-get install wmctrl
 add do ~/.bashrc
 export HOTKEY_DIR="name of directory"
 source ~/.bashrc
+
+add same to ~/.profile
+then restart (otherwise the command will work, but not when called via hotkey)
