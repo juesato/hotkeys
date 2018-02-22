@@ -1,7 +1,7 @@
 sudo apt-get install wmctrl
 
 add do ~/.bashrc
-export HOTKEY_DIR="name of directory"
+export HOME/code/hotkeys="name of directory"
 source ~/.bashrc
 
 add same to ~/.profile

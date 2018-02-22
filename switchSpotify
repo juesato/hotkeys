@@ -1,6 +1,6 @@
 #!/bin/bash
 # Spotify changed their window naming so this doesn't work anymore :(
-# DIR=$HOTKEY_DIR
+# DIR=$HOME/code/hotkeys
 # $DIR/bringToFront spotify "Spotify"
 
 # black magic below
