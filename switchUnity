@@ -1,0 +1,4 @@
+#!/bin/bash
+#DIR="$HOME/code/hotkeys"
+DIR=$HOTKEY_DIR
+$DIR/bringToFront echo "Unity 2018"
