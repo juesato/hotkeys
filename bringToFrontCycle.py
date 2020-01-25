@@ -10,8 +10,15 @@ program_name = sys.argv[1] # the program to be focused
 program_call = sys.argv[2] # the command to start program if not already open
  
 # get all windows which contain "program_name" from wmcontrol
-candidates = sorted([x.strip() for x in commands.getoutput(""" wmctrl -l -x | awk -v win="%s" 'tolower($0) ~ win {print $1;}' """ % (program_name, )).split("\n") if x !=''])
- 
+# candidates = sorted([x.strip() for x in commands.getoutput(""" wmctrl -l -x | awk -v win="%s" 'tolower($0) ~ win {print $1;}' """ % (program_name, )).split("\n") if x !=''])
+candidates = []
+outputs = commands.getoutput("wmctrl -l -x")
+for line in outputs.split('\n'):
+    if program_name in line:
+        candidates.append(line.split(' ')[0])
+
+print(candidates) 
+
 if candidates : # at least one candidate found , we need to check if the active window is among the candidates (for cycling)
  
         # Get the id of the active window

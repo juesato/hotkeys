@@ -1,3 +1,4 @@
 #!/bin/bash
 DIR="$HOME/code/hotkeys"
-$DIR/bringToFront firefox "Mozilla Firefox"
+# $DIR/bringToFront firefox "Mozilla Firefox"
+python $DIR/bringToFrontCycle.py "Mozilla Firefox" firefox

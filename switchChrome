@@ -1,3 +1,4 @@
 #!/bin/bash
 DIR="$HOME/code/hotkeys"
-$DIR/bringToFront google-chrome "Google Chrome"
+# $DIR/bringToFront google-chrome "Google Chrome"
+python $DIR/bringToFrontCycle.py "Google Chrome" google-chrome
