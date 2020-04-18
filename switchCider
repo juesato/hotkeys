@@ -1,4 +1,4 @@
 #!/bin/bash
 DIR=$HOME/code/hotkeys
-python $DIR/bringToFrontCycle.py "Cider" asdf
+python3 $DIR/bringToFrontCycle.py "Cider" asdf
 #$DIR/bringToFront asdf "Cider"

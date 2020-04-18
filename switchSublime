@@ -1,4 +1,4 @@
 #!/bin/bash
 DIR=$HOME/code/hotkeys
 #$DIR/bringToFront subl "Sublime Text"
-python $DIR/bringToFrontCycle.py "Sublime Text" subl
+python3 $DIR/bringToFrontCycle.py "Sublime Text" subl
