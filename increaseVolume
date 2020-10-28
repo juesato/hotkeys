@@ -1,5 +1,5 @@
 #!/bin/bash
 VOL=`pactl list sinks | grep '^[[:space:]]Volume:' |     head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,'`
 NEW_VOL=$(($VOL + 10))
-SINK=1
+SINK=`pactl list sinks | grep "Sink" | head -n 1 | cut -d'#' -f2`
 pactl -- set-sink-volume ${SINK} ${NEW_VOL}%

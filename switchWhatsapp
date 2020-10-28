@@ -1,0 +1,6 @@
+#!/bin/bash
+DIR="$HOME/code/hotkeys"
+# $DIR/bringToFront google-chrome "Google Chrome"
+echo `ls /opt/`
+echo `ls /opt/google/chrome`
+python3 $DIR/bringToFrontCycle.py "WhatsApp" "$DIR/startWhatsapp.sh"
