@@ -1,3 +1,3 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-$DIR/bringToFront "terminator -T jonathan-term -l lr" "jonathan-term"
+python3 $DIR/bringToFrontCycle.py "terminator -T jonathan-term -l lr" "jonathan-term"

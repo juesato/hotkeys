@@ -1,3 +1,3 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-$DIR/bringToFront "/usr/bin/dynalist-1.0.5/dynalist" "Dynalist"
+python3 $DIR/bringToFrontCycle.py "/usr/bin/dynalist-1.0.5/dynalist" "Dynalist"
