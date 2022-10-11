@@ -1,0 +1,99 @@
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom0]
+binding=['<Alt>g']
+command='/home/juesato/code/hotkeys/switchChrome > /tmp/debug2.txt'
+name='switch_chrome'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom1]
+binding=['<Alt>m']
+command='/home/juesato/code/hotkeys/switchFirefox'
+name='switch_firefox'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom10]
+binding=['<Alt>c']
+command='/home/juesato/code/hotkeys/switchCider'
+name='cider'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom11]
+binding=['AudioRaiseVolume']
+command='/home/juesato/code/hotkeys/increaseVolume'
+name='volume up'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom12]
+binding=['AudioLowerVolume']
+command='/home/juesato/code/hotkeys/decreaseVolume'
+name='volume down'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom13]
+binding=['<Alt>r']
+command='/home/juesato/code/hotkeys/switchPdf'
+name='switch pdf'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom14]
+binding=['<Alt>q']
+command='/home/juesato/code/hotkeys/switchWhatsapp'
+name='whatsapp'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom15]
+binding=['<Alt>p']
+command='/home/juesato/code/hotkeys/switchPrivate'
+name='switchPrivate'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom16]
+binding=['<Alt>bracketleft']
+command='/home/juesato/code/hotkeys/switchSheets'
+name='switchSheets'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom17]
+binding=['<Alt>d']
+command='/home/juesato/code/hotkeys/switchDynalist'
+name='switch dynalist'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom18]
+binding=@as []
+command='/home/juesato/code/hotkeys/switchDiscord'
+name='discord'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom19]
+binding=['<Shift>AudioRaiseVolume']
+command='/home/juesato/code/hotkeys/increaseVolumePast100'
+name='volume up past 100'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom2]
+binding=['<Alt>space']
+command='/home/juesato/code/hotkeys/switchTerminator'
+name='terminator'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom3]
+binding=['<Alt>w']
+command='/home/juesato/code/hotkeys/switchWorkflowy'
+name='workflowy'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom4]
+binding=['<Alt>Up']
+command='/home/juesato/code/hotkeys/spotifyUtils play'
+name='spotify play/pause'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom5]
+binding=['<Alt>Right']
+command='/home/juesato/code/hotkeys/spotifyUtils next'
+name='spotify next'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom6]
+binding=['<Alt>Left']
+command='/home/juesato/code/hotkeys/spotifyUtils prev'
+name='spotify prev'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom7]
+binding=['<Alt>h']
+command='/home/juesato/code/hotkeys/switchHangouts'
+name='hangouts'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom8]
+binding=['<Alt>Favorites']
+command='/home/juesato/code/hotkeys/switchSpotify'
+name='spotify'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom9]
+binding=['<Alt>e']
+command='/home/juesato/code/hotkeys/switchSublime'
+name='sublime'
