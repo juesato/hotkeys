@@ -17,10 +17,17 @@ We can then load this with the following commands, which first write the current
 dconf settings to a file, add our custom shortcuts to this config file, and then
 reload the amended file as our new settings:
 - dconf dump / > ~/.config/dconf/user.conf
-- Append user.conf.extra to the end of this file
+- Append user.conf.extra to the end of this file. It may be necessary to slightly tweak user.conf. [See Fn 1]
 - echo user-db:user > temporary-profile
 - DCONF_PROFILE="$(pwd)/temporary-profile" dconf load / < ~/.config/dconf/user.conf
 
 The mucking around with temporary-profile is necessary to avoid the error:
 "error: The operation attempted to modify one or more non-writable keys"
+- Need to log in and out, in order for changes to become active.
 
+
+[Fn 1]
+* For example, on newest thinkpad, I had to change "org/cinnamon/desktop/keybindings/custom-keybindings/custom" to "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom" (which was determined by adding a hotkey through the GUI, and seeing how the formatting of ~/.config/dconf/user.conf looks)
+* May also be necessary to modify something like the below to include all the necessary indices.
+> [org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
